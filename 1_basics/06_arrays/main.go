@@ -19,4 +19,26 @@ func main() {
 	// arr := [5]int{1:10, 2:40}
 
 	// len(arr) = size of array
+	
+	b := [5]int{1, 2, 3, 4, 5}
+	fmt.Println(b)
+
+	b = [...]int{5, 4, 3, 2, 1}
+	fmt.Println(b)
+	
+	b = [...]int{100, 3:400, 500}
+	fmt.Println(b)
+
+	var twoD [2][3] int
+	for i := range 2 {
+		for j := range 3 {
+			twoD[i][j] = i+j
+		}
+	}
+	fmt.Println(twoD)
+  twoD = [2][3]int{
+		{1, 2, 3},
+		{4, 5, 6},
+	}
+	fmt.Println(twoD)
 }
